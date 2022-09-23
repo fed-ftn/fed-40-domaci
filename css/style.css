@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Robota;
+  src: url(/fed-40-domaci/roboto/Roboto-Condensed.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+nav {
+  background-color: #374249;
+}
+
+ul {
+  display: flex;
+  width: 50%;
+  list-style: none;
+  justify-content: space-around;
+}
+ul li {
+  width: 20%;
+  text-align: center;
+  line-height: 3em;
+}
+
+li a {
+  text-decoration: none;
+  color: #797979;
+}
+
+li:hover {
+  background-color: #f75311;
+}
+li:hover a {
+  text-decoration: underline;
+}
+
+.active img {
+  height: 20px;
+  color: #797979;
+}
+
+/*# sourceMappingURL=style.css.map */
