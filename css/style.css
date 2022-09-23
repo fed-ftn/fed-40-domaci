@@ -10,4 +10,216 @@ body {
   color: #797979;
 }
 
+h2 {
+  text-transform: uppercase;
+  color: #374249;
+  margin-bottom: 50px;
+}
+
+.nav-bar {
+  background-color: #374249;
+}
+.nav-bar .nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav-bar .nav-list .location {
+  background-color: #f75311;
+  position: relative;
+  flex: 0 0 20%;
+}
+.nav-bar .nav-list .location a {
+  display: inline-block;
+  text-decoration: underline;
+  padding-left: 20px;
+}
+.nav-bar .nav-list .location img {
+  width: auto;
+  height: 40px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+.nav-bar .nav-list .list-item {
+  padding: 15px 30px;
+}
+.nav-bar .nav-list a {
+  text-decoration: none;
+  color: #cfd1d3;
+}
+.nav-bar .nav-list a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-image: url(../slike/intro.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+header .header-text {
+  background: rgba(55, 66, 73, 0.5);
+  color: #f3f7f9;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.one {
+  padding: 25px 150px;
+  text-align: end;
+}
+.one button {
+  padding: 15px 20px;
+  background-color: white;
+  border: 1px solid #cfd1d3;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.one button:hover {
+  color: white;
+  background-color: #797979;
+}
+
+.two {
+  background-color: #f3f7f9;
+}
+.two .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 150px;
+  margin: 0 auto;
+}
+.two .container .img-wrapper {
+  flex: 0 0 23%;
+  height: 300px;
+}
+.two .container .img-wrapper:hover .text {
+  display: block;
+  color: black;
+  padding: 15px 20px 60px 15px;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+}
+.two .container .img-one {
+  background-image: url(../slike/1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.two .container .img-two {
+  background-image: url(../slike/2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.two .container .img-three {
+  background-image: url(../slike/3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.two .container .img-four {
+  background-image: url(../slike/4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.two .container .img-five {
+  background-image: url(../slike/5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.two .container .img-six {
+  background-image: url(../slike/6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.two .container .text {
+  display: none;
+}
+
+.three {
+  padding: 50px 150px;
+  text-align: center;
+}
+.three p {
+  margin-bottom: 30px;
+}
+.three table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.three table .hidden {
+  border: none;
+  background-color: white;
+}
+.three table th {
+  background-color: #f75311;
+  color: white;
+  padding: 10px 100px;
+  border: 1px solid #374249;
+}
+.three table td {
+  padding: 10px 50px;
+  border: 1px solid #374249;
+}
+.three table .bg-dark {
+  background-color: #374249;
+  color: #f3f7f9;
+  border-bottom-color: #cfd1d3;
+  border-right-color: #cfd1d3;
+}
+
+.four {
+  padding: 50px 150px;
+  text-align: center;
+  background-color: #f3f7f9;
+}
+.four .container {
+  display: flex;
+  justify-content: space-around;
+}
+.four .container .form {
+  width: 60%;
+}
+.four .container .form form {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  flex-wrap: wrap;
+  background-color: #f75311;
+}
+.four .container .form form .form-item,
+.four .container .form form input[type=text],
+.four .container .form form input[type=email],
+.four .container .form form textarea,
+.four .container .form form select {
+  width: 100%;
+  padding: 5px;
+}
+.four .container .form form .f-one {
+  flex: 0 0 30%;
+}
+.four .container .form form .f-two {
+  flex: 0 0 65%;
+}
+.four .container .form form .f-three,
+.four .container .form form .f-foure {
+  flex: 0 0 100%;
+}
+
+footer {
+  background-color: #374249;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+footer span {
+  color: #f75311;
+}
+
 /*# sourceMappingURL=style.css.map */
