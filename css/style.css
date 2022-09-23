@@ -66,4 +66,56 @@ li:hover a {
   color: #374249;
 }
 
+.druga_sekcija {
+  display: flex;
+  justify-content: end;
+}
+
+.btn {
+  margin: 20px 100px 20px 0;
+}
+
+button {
+  padding: 15px;
+  margin: 0 10px;
+  border: 1px solid #cfd1d3;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: #cfd1d3;
+  color: white;
+}
+
+.treca_sekcija {
+  background-color: #f3f7f9;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+.container .box {
+  position: relative;
+  width: 22%;
+  margin: 1%;
+}
+.container .box img {
+  width: 100%;
+}
+.container .box .cena {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(224, 221, 221, 0.485);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.container .box:hover .cena {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
