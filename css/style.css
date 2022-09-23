@@ -118,4 +118,32 @@ button:hover {
   opacity: 1;
 }
 
+.cetvrta_sekcija {
+  text-align: center;
+}
+.cetvrta_sekcija h2 {
+  margin: 20px;
+  text-transform: uppercase;
+}
+.cetvrta_sekcija p {
+  margin: 20px;
+}
+
+table {
+  width: 50%;
+  margin: 0 auto;
+}
+
+th {
+  background-color: #f75311;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.bg-dark {
+  background-color: rgb(39, 38, 45);
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -127,3 +127,34 @@ button {
     }
   }
 }
+
+// cetvrta sekcija
+
+.cetvrta_sekcija {
+    text-align: center;
+    h2 {
+        margin: 20px;
+        text-transform: uppercase;
+    }
+    p {
+        margin:20px
+    }
+}
+table {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+
+th {
+    background-color: $narandzasta;
+}
+.hidden {
+    opacity: 0;
+    
+}
+.bg-dark {
+    background-color:rgb(39, 38, 45) ;
+  }
+
