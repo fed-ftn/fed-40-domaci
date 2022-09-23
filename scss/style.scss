@@ -1,0 +1,113 @@
+@import 'var';
+@import 'mixin';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav {
+    @include navMenu;
+}
+
+.hero {
+    @include hero;
+}
+
+.category {
+    @include category;
+}
+
+.photos {
+    @include photos;
+
+}
+
+.pricing {
+    width: 100vw;
+    h3 {
+        text-align: center;
+        margin: 2em;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 3em auto;
+        caption {
+            color: $font-color;
+            margin-bottom: 2em;
+            font-size: 1.3em;
+        }
+        td {
+            border: 1px solid $font-color;
+            text-align: center;
+            padding: 10px 70px;
+        }
+        .empty {
+            border: none;
+        }
+        .top, .dark {
+            color: white;
+            border: 1px solid $font-color;
+            padding: 10px 70px;
+        }
+        .top {
+            background-color: $highlight;
+        }
+        .dark {
+            background-color: $navigation;
+        }
+    }
+}
+
+.contact {
+    width: 100vw;
+    padding: 3em 0;
+    background-color: $bg-section;
+    h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2em;
+        font-size: 1.5em;
+    }
+    .contactBox {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-between;
+        gap: 20px;
+        width: 65%;
+        iframe {
+            width: 300px;
+            height: 300px;
+        }
+        form {
+            background-color: $highlight;
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 15px;
+            select, input {
+                height: 30px;
+            }
+            select {
+                width: 20%;
+            }
+            input[type='text'] {
+                width: 70%;
+            }
+            input[type='email'] {
+                width: 93%;
+            }
+            textarea {
+                width: 93%;
+            }
+        }    
+    }
+}
