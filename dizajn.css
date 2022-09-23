@@ -1,0 +1,153 @@
+* {
+  font-family: sans-serif;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  margin: 0 20px;
+}
+body .imgMain {
+  position: relative;
+}
+body .imgMain img {
+  width: 100%;
+}
+body .imgMain .imgMh {
+  width: 60%;
+  position: absolute;
+  text-align: center;
+  bottom: 20%;
+  left: 20%;
+  background-color: #364248;
+  color: white;
+}
+body .imgMain .imgMh h1 {
+  margin-bottom: 0;
+  font-size: 50px;
+}
+body .imgMain .imgMh h3 {
+  margin: 0;
+}
+body nav {
+  background-color: #364248;
+}
+body nav ul {
+  margin: 0;
+  padding: 0;
+}
+body nav .NewYork {
+  background-color: #FF4E26;
+}
+body nav .NewYork div a {
+  text-decoration: underline;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  height: 52px;
+}
+body nav .NewYork div img {
+  width: 20%;
+}
+body nav li {
+  display: inline-block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+body .cene {
+  text-align: right;
+  background-color: white;
+}
+body .cene p {
+  padding: 20px 40px;
+  margin: 20px;
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 30px;
+  display: inline-block;
+}
+body .container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #F2F7F9;
+}
+body .container div {
+  width: 75%;
+  margin: 40px auto;
+}
+body .container div img {
+  height: 35%;
+  width: 20%;
+  padding: 30px;
+}
+body .pricing {
+  background-color: white;
+}
+body .pricing h2 {
+  margin: 0;
+  padding: 30px 0;
+  text-align: center;
+}
+body .contact {
+  background-color: #F2F7F9;
+  height: 45vh;
+  text-align: right;
+}
+body .contact h1 {
+  color: #364248;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+body .contact div {
+  background-color: #FF4E26;
+  padding: 10px;
+  text-align: center;
+  width: 40%;
+  padding: 20px 0;
+  display: inline-block;
+  margin: 50px 300px 0 0;
+}
+body .contact div select {
+  margin: 0 20px 0 20px;
+  padding: 10px;
+  width: 20%;
+}
+body .contact div input {
+  padding: 10px;
+  width: 67%;
+  margin: 0 20px 20px 0;
+}
+body .contact div .email {
+  width: 90%;
+  margin: 0;
+}
+body .contact div textarea {
+  width: 90%;
+  height: 30%;
+  padding: 10px;
+  margin-top: 20px;
+}
+body footer {
+  background-color: #364248;
+  height: 40px;
+  text-align: center;
+  padding: 10px 0 10px;
+}
+body footer p {
+  color: white;
+}
+body footer p span {
+  color: rgb(192, 78, 2);
+}/*# sourceMappingURL=dizajn.css.map */
