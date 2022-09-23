@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #374249;
+  line-height: 2em;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 3%;
+}
+
+#ime {
+  color: white;
+  font-size: 20px;
+}
+
+nav ul li:first-child {
+  background-color: #f75311;
+  color: white;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #797979;
+}
+
+li > img {
+  width: 30px;
+}/*# sourceMappingURL=style.css.map */

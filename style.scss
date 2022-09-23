@@ -1,0 +1,35 @@
+@import "vars";
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+nav ul{
+    list-style: none;
+    background-color: $header-color;
+    line-height: 2em;
+    padding-inline-start: 0px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding:0 3%;
+    
+}
+#ime{
+    color:white;
+    font-size: $font-size+4;
+}
+nav ul li:first-child{
+    background-color: $orange-color;
+    color: white;
+    text-decoration: underline;
+    font-size: $font-size + 4;
+}
+nav ul li a{
+    text-decoration: none;
+    color: $font-color;
+}
+li>img{
+    width: 30px;
+}
