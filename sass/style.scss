@@ -12,10 +12,35 @@ body {
   font-family: $font-family;
   color: $color-font;
 }
+
+.container {
+  max-width: 1160px;
+  padding: 50px;
+  margin: $margin-center;
+  text-align: center;
+
+  @include medium {
+    max-width: 80%;
+  }
+}
+.btn {
+  padding: 15px 20px;
+  background-color: white;
+  border: 1px solid $color-lightgrey-one;
+  border-radius: 30px;
+  margin-right: 10px;
+  color: $color-font;
+
+  &:hover {
+    color: white;
+    background-color: $color-font;
+  }
+}
+
 h2 {
   text-transform: uppercase;
   color: $color-headings;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .nav-bar {
@@ -26,11 +51,15 @@ h2 {
     align-items: center;
     list-style: none;
 
+    @include small {
+      flex-wrap: wrap;
+    }
+
     .location {
       background-color: $color-orange;
       position: relative;
       flex: 0 0 20%;
-
+      text-align: left;
       a {
         display: inline-block;
         text-decoration: underline;
@@ -48,6 +77,16 @@ h2 {
 
     .list-item {
       padding: 15px 30px;
+      @include small {
+        flex: 0 0 100%;
+        text-align: center;
+      }
+
+      &.location {
+        @include small {
+          text-align: left;
+        }
+      }
     }
 
     a {
@@ -67,6 +106,10 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  @include small {
+    background: none;
+    height: auto;
+  }
 
   .header-text {
     background: rgba($color-dark-blue, 0.5);
@@ -75,41 +118,56 @@ header {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 100px;
+
+    @include medium {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    @include small {
+      width: 100%;
+      margin-bottom: 0;
+      background-color: black;
+    }
+    p {
+      @include small {
+        font-size: 2rem;
+        padding-bottom: 50px;
+      }
+    }
   }
 }
 
 .one {
-  padding: 25px 150px;
   text-align: end;
-
-  button {
-    padding: 15px 20px;
-    background-color: white;
-    border: 1px solid $color-lightgrey-one;
-    border-radius: 30px;
-    margin-right: 10px;
-
-    &:hover {
-      color: white;
-      background-color: $color-font;
-    }
+  margin-right: 50px;
+  @include medium {
+    margin-right: 0;
+  }
+  @include small {
+    text-align: center;
+    margin: $margin-center;
   }
 }
 
 .two {
   background-color: $color-lightgrey-two;
 
-  .container {
+  .two-wrapper {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 50px 150px;
-    margin: 0 auto;
 
     .img-wrapper {
       flex: 0 0 23%;
       height: 300px;
+      @include medium {
+        flex: 0 0 45%;
+      }
+      @include small {
+        flex: 0 0 100%;
+      }
       &:hover .text {
         display: block;
         color: black;
@@ -145,21 +203,29 @@ header {
 
     .text {
       display: none;
+      @include small {
+        display: block;
+        color: black;
+        padding: 15px 20px 60px 15px;
+        background: rgba(white, 0.5);
+        font-size: 1.2rem;
+        text-align: start;
+      }
     }
   }
 }
 
 .three {
-  padding: 50px 150px;
-  text-align: center;
-
   p {
     margin-bottom: 30px;
   }
 
   table {
-    margin: 0 auto;
+    margin: $margin-center;
     border-collapse: collapse;
+    @include small {
+      display: none;
+    }
 
     .hidden {
       border: none;
@@ -171,36 +237,64 @@ header {
       color: white;
       padding: 10px 100px;
       border: 1px solid $color-dark-blue;
+      @include medium {
+        padding: 10px 50px;
+      }
     }
 
     td {
       padding: 10px 50px;
       border: 1px solid $color-dark-blue;
+      @include medium {
+        padding: 10px 50px;
+      }
     }
+
     .bg-dark {
       background-color: $color-dark-blue;
       color: $color-lightgrey-two;
       border-bottom-color: $color-lightgrey-one;
       border-right-color: $color-lightgrey-one;
+      @include medium {
+        padding: 10px 50px;
+      }
+    }
+  }
+  .btn-hidden {
+    display: none;
+    @include small {
+      display: block;
+      margin: $margin-center;
     }
   }
 }
 .four {
-  padding: 50px 150px;
   text-align: center;
+  padding: 50px;
   background-color: $color-lightgrey-two;
 
-  .container {
+  .four-form {
     display: flex;
     justify-content: space-around;
+    @include medium {
+      flex-wrap: wrap;
+      padding: 0;
+    }
     .form {
       width: 60%;
+      @include medium {
+        width: 100%;
+      }
+
       form {
         display: flex;
         justify-content: space-between;
         padding: 30px;
         flex-wrap: wrap;
         background-color: $color-orange;
+        @include medium {
+          margin-top: 20px;
+        }
         .form-item,
         input[type="text"],
         input[type="email"],
@@ -211,9 +305,15 @@ header {
         }
         .f-one {
           flex: 0 0 30%;
+          @include small {
+            flex: 0 0 100%;
+          }
         }
         .f-two {
           flex: 0 0 65%;
+          @include small {
+            flex: 0 0 100%;
+          }
         }
         .f-three,
         .f-foure {

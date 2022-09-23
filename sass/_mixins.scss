@@ -3,3 +3,13 @@
   background-position: center;
   background-size: cover;
 }
+@mixin medium {
+  @media screen and (max-width: $medium-width) {
+    @content;
+  }
+}
+@mixin small {
+  @media screen and (max-width: $small-width) {
+    @content;
+  }
+}

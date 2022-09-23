@@ -16,12 +16,12 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 80%;
   }
 }
+
 .btn {
   padding: 15px 20px;
   background-color: white;
@@ -30,7 +30,6 @@ body {
   margin-right: 10px;
   color: #797979;
 }
-
 .btn:hover {
   color: white;
   background-color: #797979;
@@ -45,13 +44,11 @@ h2 {
 .nav-bar {
   background-color: #374249;
 }
-
 .nav-bar .nav-list {
   display: flex;
   align-items: center;
   list-style: none;
 }
-
 @media screen and (max-width: 768px) {
   .nav-bar .nav-list {
     flex-wrap: wrap;
@@ -63,13 +60,11 @@ h2 {
   flex: 0 0 20%;
   text-align: left;
 }
-
 .nav-bar .nav-list .location a {
   display: inline-block;
   text-decoration: underline;
   padding-left: 20px;
 }
-
 .nav-bar .nav-list .location img {
   width: auto;
   height: 40px;
@@ -77,11 +72,9 @@ h2 {
   left: 10px;
   top: 5px;
 }
-
 .nav-bar .nav-list .list-item {
   padding: 15px 30px;
 }
-
 @media screen and (max-width: 768px) {
   .nav-bar .nav-list .list-item {
     flex: 0 0 100%;
@@ -97,7 +90,6 @@ h2 {
   text-decoration: none;
   color: #cfd1d3;
 }
-
 .nav-bar .nav-list a:hover {
   text-decoration: underline;
 }
@@ -111,7 +103,6 @@ header {
   align-items: flex-end;
   justify-content: center;
 }
-
 @media screen and (max-width: 768px) {
   header {
     background: none;
@@ -126,7 +117,6 @@ header .header-text {
   margin: 0 auto;
   margin-bottom: 100px;
 }
-
 @media screen and (max-width: 1024px) {
   header .header-text h1 {
     font-size: 4rem;
@@ -145,11 +135,11 @@ header .header-text {
     padding-bottom: 50px;
   }
 }
+
 .one {
   text-align: end;
   margin-right: 50px;
 }
-
 @media screen and (max-width: 1024px) {
   .one {
     margin-right: 0;
@@ -161,22 +151,20 @@ header .header-text {
     margin: 0 auto;
   }
 }
+
 .two {
   background-color: #f3f7f9;
 }
-
 .two .two-wrapper {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .two .two-wrapper .img-wrapper {
   flex: 0 0 23%;
   height: 300px;
 }
-
 @media screen and (max-width: 1024px) {
   .two .two-wrapper .img-wrapper {
     flex: 0 0 45%;
@@ -194,47 +182,39 @@ header .header-text {
   background: rgba(255, 255, 255, 0.5);
   font-size: 1.2rem;
 }
-
 .two .two-wrapper .img-one {
   background-image: url(../slike/1.jpg);
   background-position: center;
   background-size: cover;
 }
-
 .two .two-wrapper .img-two {
   background-image: url(../slike/2.jpg);
   background-position: center;
   background-size: cover;
 }
-
 .two .two-wrapper .img-three {
   background-image: url(../slike/3.jpg);
   background-position: center;
   background-size: cover;
 }
-
 .two .two-wrapper .img-four {
   background-image: url(../slike/4.jpg);
   background-position: center;
   background-size: cover;
 }
-
 .two .two-wrapper .img-five {
   background-image: url(../slike/5.jpg);
   background-position: center;
   background-size: cover;
 }
-
 .two .two-wrapper .img-six {
   background-image: url(../slike/6.jpg);
   background-position: center;
   background-size: cover;
 }
-
 .two .two-wrapper .text {
   display: none;
 }
-
 @media screen and (max-width: 768px) {
   .two .two-wrapper .text {
     display: block;
@@ -245,15 +225,14 @@ header .header-text {
     text-align: start;
   }
 }
+
 .three p {
   margin-bottom: 30px;
 }
-
 .three table {
   margin: 0 auto;
   border-collapse: collapse;
 }
-
 @media screen and (max-width: 768px) {
   .three table {
     display: none;
@@ -263,14 +242,12 @@ header .header-text {
   border: none;
   background-color: white;
 }
-
 .three table th {
   background-color: #f75311;
   color: white;
   padding: 10px 100px;
   border: 1px solid #374249;
 }
-
 @media screen and (max-width: 1024px) {
   .three table th {
     padding: 10px 50px;
@@ -280,7 +257,6 @@ header .header-text {
   padding: 10px 50px;
   border: 1px solid #374249;
 }
-
 @media screen and (max-width: 1024px) {
   .three table td {
     padding: 10px 50px;
@@ -292,7 +268,6 @@ header .header-text {
   border-bottom-color: #cfd1d3;
   border-right-color: #cfd1d3;
 }
-
 @media screen and (max-width: 1024px) {
   .three table .bg-dark {
     padding: 10px 50px;
@@ -301,24 +276,22 @@ header .header-text {
 .three .btn-hidden {
   display: none;
 }
-
 @media screen and (max-width: 768px) {
   .three .btn-hidden {
     display: block;
     margin: 0 auto;
   }
 }
+
 .four {
   text-align: center;
   padding: 50px;
   background-color: #f3f7f9;
 }
-
 .four .four-form {
   display: flex;
   justify-content: space-around;
 }
-
 @media screen and (max-width: 1024px) {
   .four .four-form {
     flex-wrap: wrap;
@@ -328,7 +301,6 @@ header .header-text {
 .four .four-form .form {
   width: 60%;
 }
-
 @media screen and (max-width: 1024px) {
   .four .four-form .form {
     width: 100%;
@@ -341,7 +313,6 @@ header .header-text {
   flex-wrap: wrap;
   background-color: #f75311;
 }
-
 @media screen and (max-width: 1024px) {
   .four .four-form .form form {
     margin-top: 20px;
@@ -355,11 +326,9 @@ header .header-text {
   width: 100%;
   padding: 5px;
 }
-
 .four .four-form .form form .f-one {
   flex: 0 0 30%;
 }
-
 @media screen and (max-width: 768px) {
   .four .four-form .form form .f-one {
     flex: 0 0 100%;
@@ -368,7 +337,6 @@ header .header-text {
 .four .four-form .form form .f-two {
   flex: 0 0 65%;
 }
-
 @media screen and (max-width: 768px) {
   .four .four-form .form form .f-two {
     flex: 0 0 100%;
@@ -385,9 +353,6 @@ footer {
   color: white;
   padding: 20px 0;
 }
-
 footer span {
   color: #f75311;
-} /*# sourceMappingURL=style.css.map */
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
