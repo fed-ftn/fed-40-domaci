@@ -51,9 +51,10 @@ li:hover {
 }
 
 //prva sekcija SCSS
-
-.pozadina img {
+.prva_sekcija {
   position: relative;
+}
+.pozadina img {
   width: 100%;
 
   background-size: cover;
@@ -62,13 +63,12 @@ li:hover {
 
 .naslov {
   position: absolute;
-  background-color: $svetlosiva1;
-  opacity: 0.6;
+  background-color: rgba(255, 255, 255, 0.297);
 
   text-align: center;
   width: 60%;
-  left: 300px;
-  bottom: 0px;
+  left: 20%;
+  bottom: 20%;
   p {
     color: $naslovi;
   }
@@ -113,17 +113,17 @@ button {
       width: 100%;
     }
     .cena {
-        position: absolute;
-        top: 0;
-        text-align: center;
-        width: 100%;
-        background-color: rgba(224, 221, 221, 0.485);
-        transition: .5s ease;
-        opacity: 0;
+      position: absolute;
+      top: 0;
+      text-align: center;
+      width: 100%;
+      background-color: rgba(224, 221, 221, 0.485);
+      transition: 0.5s ease;
+      opacity: 0;
     }
 
-    &:hover .cena{
-        opacity: 1;
+    &:hover .cena {
+      opacity: 1;
     }
   }
 }
@@ -131,98 +131,190 @@ button {
 // cetvrta sekcija
 
 .cetvrta_sekcija {
-    text-align: center;
-    h2 {
-        margin: 50px;
-        text-transform: uppercase;
-    }
-    p {
-        margin:20px
-    }
+  text-align: center;
+  h2 {
+    margin: 50px;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 20px;
+  }
 }
 table {
-    width: 50%;
-    margin: 30px auto;
-    
+  width: 50%;
+  margin: 30px auto;
 }
-
 
 th {
-    background-color: $narandzasta;
+  background-color: $narandzasta;
 }
 .hidden {
-    opacity: 0;
-    
+  opacity: 0;
 }
 .bg-dark {
-    background-color:rgb(39, 38, 45) ;
-  }
+  background-color: rgb(39, 38, 45);
+}
 
-
-  //peta sekcija
+//peta sekcija
 .peta_sekcija {
-    h2 {
-        margin: 50px;
-        text-transform: uppercase; 
-        text-align: center;
-    }
+  h2 {
+    margin: 50px;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 .pet_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px auto;
+  justify-content: space-around;
+
+  .map {
+    width: 30%;
+  }
+}
+form {
+  position: relative;
+  width: 50%;
+
+  background-color: $narandzasta;
+}
+
+.pol {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40%;
+
+  select {
+    width: 100%;
+  }
+}
+.ime {
+  position: absolute;
+  width: 50%;
+  top: 20px;
+  right: 20px;
+  input {
+    width: 100%;
+  }
+}
+.message {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 90%;
+  textarea {
+    width: 100%;
+  }
+}
+.email {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  width: 90%;
+  input {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: $tamnoplava;
+  text-align: center;
+  color: white;
+
+  span {
+    color: $narandzasta;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  ul {
+    width: 80%;
+
+    li {
+      width: 20%;
+    }
+  }
+
+  .container {
+    justify-content: center;
+
+    .box {
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: block;
+    width: 100%;
+    list-style: none;
+
+    li {
+      display: none;
+      width: 100%;
+      text-align: center;
+      line-height: 3em;
+    }
+    .active {
+      display: block;
+    }
+
+    &:hover li {
+      display: block;
+    }
+  }
+  .prva_sekcija {
+    background-color: black;
+    height: 200px;
+  }
+  .pozadina img {
+    display: none;
+  }
+
+  .naslov {
+    text-align: center;
+    background-color: black;
+
+    justify-items: center;
+    margin-bottom: 20px;
+    h1 {
+      color: white;
+    }
+    p {
+      color: white;
+      margin-bottom: 10px;
+    }
+  }
+
+  .container {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
-    justify-content: space-around;
 
-    .map{
-        width: 30%;
-    }
+    .box {
+      position: relative;
+      width: 100%;
 
-
-}
-form {
-    position: relative;
-    width: 50%;
-    
-    background-color: $narandzasta;
-}
-
-.pol {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 40%;
-     
-    select {
+      img {
         width: 100%;
-    }
-}
-.ime {
-    position: absolute;
-    width: 50%;
-    top: 20px;
-    right: 20px;
-    input {
-        width:100%;
-    }
-}
-.message {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 90%;
-    textarea {
+      }
+      .cena {
+        top: 0;
+        text-align: left;
         width: 100%;
+        height: 20%;
+
+        padding: 10px;
+      }
     }
-    
-}
-.email {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    width: 90%;
-    input {
-        width:100% 
-        
-    }
+  }
+
+  table {
+    display: none;
+  }
 }
