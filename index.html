@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../fed-40-domaci/css/style.css">
-    <title>Home Exchange</title>
+    <title>HomeExchange</title>
 </head>
 
 <body>
     <nav>
-        <img src="../fed-40-domaci/slike/location.png">
-        <p> New York</p>
+        <div class="location-nav">
+            <img src="../fed-40-domaci/slike/location.png">
+            <p> New York</p>
+        </div>
+
         <ul>
             <li> <a href="#"> Rent </a></li>
             <li> <a href="#"> Buy</a></li>
@@ -23,6 +26,7 @@
     <main>
 
         <section class="intro-container">
+            <img src="../fed-40-domaci/slike/intro.jpg" alt="intro">
             <div class="headline">
                 <h1> Welcome to HomeExchange</h1>
                 <p>Your fastest way to find or sell home online.</p>
@@ -30,93 +34,160 @@
         </section>
 
         <section class="filters-container">
-            <span>$ 1,200 - $1,400 </span>
-            <span> 1 + Bedroom </span>
-            <span>Garage</span>
+            <button type="button">$ 1,200 - $1,400</button>
+            <button type="button">1 + Bedroom </button>
+            <button type="button">Garage</button>
         </section>
 
         <section class="pictures-container">
+            <div class="pictures">
+                <div class="image-div">
+                    <img src="../fed-40-domaci/slike/1.jpg">
+                    <div class="picture-text loft">
+                        <p class="apartment-name">Loft Apartment
+                        <p class="price"> $3,000 </p>
+                        </p>
+                    </div>
 
-            <img src="../fed-40-domaci/slike/1.jpg">
-            <img src="../fed-40-domaci/slike/2.jpg">
-            <img src="../fed-40-domaci/slike/3.jpg">
-            <img src="../fed-40-domaci/slike/4.jpg">
-            <img src="../fed-40-domaci/slike/5.jpg">
-            <img src="../fed-40-domaci/slike/6.jpg">
+                </div>
 
-        </section class="pricing-container">
+                <div class="image-div">
+                    <img src="../fed-40-domaci/slike/2.jpg">
+                    <div class="picture-text lovely">
+                        <p class="apartment-name"> Lovely House
+                        <p class="price"> $3,600 </p>
+                        </p>
+                    </div>
+                </div>
 
-        <h1> Pricing</h1>
-        <p> Our services prices in New York</p>
+                <div class="image-div">
+                    <img src="../fed-40-domaci/slike/3.jpg">
+                    <div class="picture-text condo">
+                        <p class="apartment-name">Beachside Condo
+                        <p class="price"> $2,300 </p>
+                        </p>
+                    </div>
 
-        <table border="1px">
-            <thead>
-                
-                <colgroup span="2"></colgroup>
-                <colgroup span="2"></colgroup>
+                </div>
+
+                <div class="image-div">
+                    <img src="../fed-40-domaci/slike/4.jpg">
+                    <div class="picture-text studio">
+                        <p class="apartment-name">Centertown Studio
+                        <p class="price"> $2,800 </p>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="image-div">
+                    <img src="../fed-40-domaci/slike/5.jpg">
+                    <div class="picture-text artist">
+                        <p class="apartment-name">Artist Studio
+                        <p class="price"> $3,500 </p>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="image-div">
+                    <img src="../fed-40-domaci/slike/6.jpg">
+                    <div class="picture-text downtown">
+                        <p class="apartment-name">Downtown Apartment
+                        <p class="price"> $1,500 </p>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="pricing-container">
+
+            <h1> Pricing</h1>
+            <p> Our services prices in New York</p>
+
+            <table>
                 <tr>
-                   <th> </th>
-                    <th colspan="3"> Price</th>
+                    <th class="hidden"></th>
+                    <th class="hidden"></th>
+                    <th colspan="2" class="orange">Price</th>
                 </tr>
                 <tr>
-                    <th></th>
-                    <th colspan="2">Rent</th>
-                    <th>Buy</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="3"> Location </td>
-                    <th>Downtown</th>
-                    <td> $3 </td>
-                    <td> $3 </td>
+                    <th class="hidden"></th>
+                    <th class="hidden"></th>
+                    <th class="dark-blue">Rent/Buy</th>
+                    <th class="dark-blue">Sell</th>
                 </tr>
                 <tr>
-                    <th>Center</th>
-                    <td> $3 </td>
-                    <td> $3 </td>
+                    <th rowspan='3' class="orange">Location</th>
+                    <th class="dark-blue">Downtown</th>
+                    <td>$3</td>
+                    <td>$3</td>
                 </tr>
                 <tr>
-                    <th> Manhattan</th>
-                    <td> $3 </td>
-                    <td> $3 </td>
+
+                    <th class="dark-blue">Center</th>
+                    <td>$3</td>
+                    <td>$3</td>
                 </tr>
-            </tbody>
-        </table>
+                <tr>
+
+                    <th class="dark-blue">Manhattan</th>
+                    <td>$3</td>
+                    <td>$3</td>
+                </tr>
+            </table>
 
         </section>
 
         <section class="contact-container">
 
-            <h2> Contact us </h2>
-            <div class="form-container">
-                <form action="#" method="post">
-                    <div class="inputs">
-                        <select name="Gender">
-                            <option value="Mrs.">Mrs</option>
-                            <option value="Miss">Miss</option>
-                            <option value="Mr.">Mr.</option>
-                        </select>
-                        <input type="text" name="name" id="name" placeholder="Your name" class="name-and-email">
+            <h1> Contact us </h1>
+            <div class="form-and-location">
 
-                        <input type="email" name="email" id="email" placeholder="Your e-mail" class="name-and-email">
-                        <br>
 
+                <div class="location-container">
+                    <iframe <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.18292665089!2d-73.98979592831634!3d40.75800122288477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855a96da09d%3A0x860bf5a5e1a00a68!2zVGltZXMgU3F1YXJlLCBOZXcgWW9yaywgTlkgMTAwMzYsINCh0ZjQtdC00LjRmtC10L3QtSDQlNGA0LbQsNCy0LU!5e0!3m2!1ssr!2srs!4v1663979313508!5m2!1ssr!2srs"
+                        width="400" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="form-container">
+                    <div class="form-contact">
+                        <div class="first-row">
+                            <form action="#" method="post">
+                                <div class="select-container">
+                                    <select name="Gender">
+                                        <option value="Mrs.">Mrs</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Mr.">Mr.</option>
+                                    </select>
+                                    <input type="text" name="name" id="name" placeholder="Your name"
+                                        class="name-and-email">
+                                </div>
+                                <div class="input-container">
+                                <input type="email" name="email" id="email" placeholder="Your e-mail"
+                                    class="name-and-email">
+                                </div>
+                                <div class="textarea-container">
+                                <textarea id="msg" name="message" rows="4" cols="40" placeholder="Your message" class="form-message-input"></textarea>
+                                </div>
+                        </form>
                     </div>
-                    <textarea id="msg" name="message" rows="5" cols="50" placeholder="Your message"
-                        class="form-message-input"></textarea>
-                </form>
-            </div>
-            <div class="location-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.184133389617!2d-73.98773128496414!3d40.75797467932692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2z0KLQsNGY0LzRgSDRgdC60LLQtdGA!5e0!3m2!1ssr!2srs!4v1663946954768!5m2!1ssr!2srs"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
             </div>
 
         </section>
 
     </main>
+    <footer>
+        <div>
+            <span> Copyright &#169; 2016 </span>
+            <span>HomeExchange</span>
+        </div>
+    </footer>
 </body>
 
 </html>

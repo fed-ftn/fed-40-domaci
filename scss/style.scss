@@ -1,0 +1,418 @@
+@import "mixins";
+@import "variables";
+@import "fonts";
+
+@include body;
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: $dark-blue-color;
+
+    @include location-nav;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                padding: 25px;
+                text-align: left;
+                color: white;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@include sections-container-height;
+
+.intro-container {
+    display: flex;
+    position: relative;
+
+    img {
+        display: flex;
+        width: 100%;
+        max-height: 100%;
+
+    }
+
+    .headline {
+        width: 80%;
+        background-color: rgba(94, 94, 94, 0.45);
+        position: absolute;
+        bottom: 100px;
+        right: 125px;
+        color: white;
+        text-align: center;
+
+        h1 {
+            font-size: 40pt;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+.filters-container {
+    display: flex;
+    justify-content: right;
+    overflow: none;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+    margin-right: 100px;
+
+    button {
+        width: 13%;
+        display: flex;
+        padding: 12px;
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border: 1px solid rgb(192, 190, 190);
+        border-radius: 50px;
+        color: gray;
+
+        &:hover {
+            background-color: rgb(206, 206, 206);
+            color: white;
+        }
+    }
+}
+
+// @include pictures-hover;
+
+.pictures-container {
+
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $section-background-color;
+    align-items: center;
+
+    .pictures {
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        width: 80%;
+        column-gap: 3.3%;
+
+        .image-div:hover {
+            .picture-text {
+                opacity: 1;
+            }
+        }
+
+        .image-div {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            height: 300px;
+            padding: 20px;
+
+        }
+
+        .picture-text {
+            //position: absolute;
+            background-color: rgba(255, 255, 255, 0.612);
+            margin: 20px;
+            padding: 10px;
+            opacity: 0;
+            transform: translateY(-300px);
+
+        }
+
+
+    }
+}
+
+
+
+.pricing-container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+
+    table {
+        border-collapse: collapse;
+        text-align: center;
+        width: 50%;
+
+        .hidden {
+            border: hidden;
+            visibility: hidden;
+        }
+
+        .orange {
+            background-color: $orange-color;
+            color: white;
+        }
+
+        .dark-blue {
+            background-color: $dark-blue-color;
+            color: white;
+        }
+
+        th,
+        td {
+            border: 0.5px solid gray;
+            margin: 0px;
+            border-spacing: 0px;
+
+            padding: 5px;
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: $headings-color;
+        margin: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        color: $font-color;
+        margin-bottom: 50px;
+    }
+
+}
+
+.contact-container {
+    padding: 20px;
+    background-color: $section-background-color;
+
+    .form-and-location {
+        margin: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: $headings-color;
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+
+.form-container {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    background-color: $orange-color;
+    justify-content: space-between;
+
+    .form-contact {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+
+
+
+    }
+
+
+    .first-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+
+        select {
+            width: 80px;
+            padding: 7px;
+            margin: 5px;
+        }
+
+        & #name {
+
+            width: 75%;
+            padding: 7px;
+            margin: 5px;
+        }
+
+        & #email {
+            padding: 7px;
+            margin: 10px;
+            width: 540px;
+        }
+    }
+
+    textarea {
+
+        padding: 7px;
+        margin: 10px;
+        width: 540px;
+
+    }
+}
+
+footer {
+    background-color: $dark-blue-color;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        color: white;
+
+        :nth-child(2) {
+            color: $orange-color;
+        }
+    }
+
+}
+
+@include tablet {
+
+
+    .pictures {
+        position: relative;
+        display: flex;
+        flex-direction: column; //ovo se menja
+        align-items: center;
+        margin-left: 20px;
+        justify-content: center !important;
+
+    }
+
+
+}
+
+@include mobile {
+    .pictures-container {
+        justify-content: center;
+
+        .pictures {
+            justify-content: center !important;
+            width: 95% !important;
+            margin: 0px !important;
+
+            .image-div {
+                width: 100%;
+
+                img {
+                    padding: 0px;
+                    object-fit: cover;
+                }
+
+                .picture-text {
+                    opacity: 1 !important;
+                    margin: 0px !important;
+                }
+            }
+        }
+    }
+
+    .form-and-location {
+        flex-direction: column !important;
+        margin: 0px !important;
+
+        .location-container {
+            width: 100%;
+
+            iframe {
+                width: 100%;
+            }
+        }
+
+        .form-container {
+            width: 100%;
+            margin: 10px;
+
+            .first-row {
+                width: 100%;
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    .select-container {
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                    .input-container,
+                    .textarea-container {
+                        display: flex;
+                    }
+
+                    input,
+                    textarea {
+                        width: 100% !important;
+                        margin: 4px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        padding: 0;
+        flex-direction: column;
+
+        ul {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                padding: 10px;
+                list-style-type: none;
+
+                a {
+                    padding: 10px;
+                    text-decoration: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+}
