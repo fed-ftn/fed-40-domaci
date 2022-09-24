@@ -37,6 +37,9 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
+nav ul li a:hover {
+  text-decoration: underline;
+}
 
 .hero .img-container {
   width: 100vw;
@@ -50,7 +53,8 @@ nav ul li a {
 }
 .hero .img-container .hero-txt {
   text-align: center;
-  background-color: #f3f7f9;
+  background-color: #374249;
+  color: white;
   width: 65%;
   margin: 0 auto;
   position: absolute;
@@ -74,6 +78,10 @@ nav ul li a {
   border: 1px gray solid;
   border-radius: 18px;
 }
+.category button:hover {
+  background-color: #374249;
+  color: white;
+}
 
 .photos {
   width: 100vw;
@@ -83,7 +91,22 @@ nav ul li a {
   gap: 15px;
   padding: 50px 18%;
 }
-.photos div img {
+.photos .card {
+  position: relative;
+}
+.photos .card .card-txt {
+  position: absolute;
+  z-index: 4;
+  padding: 0.5em;
+  background-color: rgba(211, 211, 211, 0.65);
+  width: 100%;
+  height: 30%;
+  display: none;
+}
+.photos .card:hover .card-txt {
+  display: block;
+}
+.photos .card img {
   width: 250px;
 }
 
@@ -95,6 +118,18 @@ nav ul li a {
   margin: 2em;
   text-transform: uppercase;
   font-size: 1.5em;
+}
+.pricing button {
+  display: none;
+  margin: 10px auto;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px gray solid;
+  border-radius: 18px;
+}
+.pricing button:hover {
+  background-color: #374249;
+  color: white;
 }
 .pricing table {
   border-collapse: collapse;
@@ -170,6 +205,95 @@ nav ul li a {
 }
 .contact .contactBox form textarea {
   width: 93%;
+}
+
+@media screen and (max-width: 1024px) {
+  .photos {
+    justify-content: center;
+  }
+  .photos .card {
+    width: 250px;
+    height: 200px;
+  }
+  .photos .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .pricing table td {
+    padding: 5px 45px;
+  }
+  .pricing table .top, .pricing table .dark {
+    padding: 5px 45px;
+  }
+  .contact {
+    margin-inline: auto;
+  }
+  .contact .contactBox {
+    justify-content: center;
+  }
+  .contact .contactBox form {
+    width: 100%;
+  }
+  .contact .contactBox form input, .contact .contactBox form select, .contact .contactBox form textarea {
+    margin: 1em 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav .navHL {
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  .hero .img-container {
+    height: auto;
+  }
+  .hero .img-container img {
+    display: none;
+  }
+  .hero .img-container .hero-txt {
+    background-color: black;
+    top: 0px;
+    width: 100vw;
+    padding: 20px 0;
+    height: fit-content;
+  }
+  .category {
+    width: 100vw;
+    margin-top: 12em;
+    justify-content: center;
+  }
+  .photos {
+    margin-top: 1em;
+  }
+  .photos .card {
+    width: 550px;
+    height: 300px;
+    pointer-events: none;
+  }
+  .photos .card .card-txt {
+    display: block;
+  }
+  .pricing caption {
+    width: 300px;
+  }
+  .pricing tr {
+    display: none;
+  }
+  .pricing button {
+    display: block;
+  }
+  .contact .contactBox form input[type=text], .contact .contactBox form select {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
