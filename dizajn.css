@@ -24,11 +24,11 @@ body .imgMain .imgMh {
   background-color: #364248;
   color: white;
 }
-body .imgMain .imgMh h1 {
+body .imgMain .imgMh div h1 {
   margin-bottom: 0;
   font-size: 50px;
 }
-body .imgMain .imgMh h3 {
+body .imgMain .imgMh div h3 {
   margin: 0;
 }
 body nav {
@@ -96,19 +96,17 @@ body .pricing {
 }
 body .pricing h2 {
   margin: 0;
-  padding: 30px 0;
+  padding: 40px 0 10px;
   text-align: center;
+}
+body .pricing p {
+  text-align: center;
+  color: gray;
 }
 body .contact {
+  width: 100%;
   background-color: #F2F7F9;
-  height: 45vh;
   text-align: right;
-}
-body .contact h1 {
-  color: #364248;
-  text-align: center;
-  margin: 0;
-  padding-top: 30px;
 }
 body .contact div {
   background-color: #FF4E26;
@@ -117,7 +115,7 @@ body .contact div {
   width: 40%;
   padding: 20px 0;
   display: inline-block;
-  margin: 50px 300px 0 0;
+  margin: 50px 200px 50px 100px;
 }
 body .contact div select {
   margin: 0 20px 0 20px;
@@ -138,6 +136,22 @@ body .contact div textarea {
   height: 30%;
   padding: 10px;
   margin-top: 20px;
+}
+body .contact .maprouter {
+  width: 20%;
+  margin: 20px 50px 20px;
+  padding: 0;
+}
+body .contact .maprouter iframe {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+body .contact h1 {
+  color: #364248;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
 }
 body footer {
   background-color: #364248;

@@ -11,7 +11,7 @@ body {
 
     .imgMain {
         position: relative;
-        
+
 
         img {
             width: 100%;
@@ -24,16 +24,24 @@ body {
             bottom: 20%;
             left: 20%;
             background-color: #364248;
+
             color: white;
 
-            h1 {
-                margin-bottom: 0;
-                font-size: 50px;
+            div {
+
+
+                h1 {
+                    margin-bottom: 0;
+                    font-size: 50px;
+
+                }
+
+                h3 {
+                    margin: 0;
+                }
             }
 
-            h3 {
-                margin: 0;
-            }
+
         }
 
     }
@@ -125,21 +133,78 @@ body {
 
     .pricing {
         background-color: white;
-        h2{
+
+        h2 {
             margin: 0;
-            padding: 30px 0;
+            padding: 40px 0 10px;
             text-align: center;
+        }
+        p{
+            text-align: center;
+            color: gray;
         }
     }
 
 
 
-    .contact{
-         background-color: #F2F7F9;
-         height: 45vh;
-         text-align: right;
-         
-         
+    .contact {
+
+        width: 100%;
+        background-color: #F2F7F9;
+        text-align: right;
+
+        div {
+
+            background-color: #FF4E26;
+            padding: 10px;
+            text-align: center;
+            width: 40%;
+            padding: 20px 0;
+            display: inline-block;
+            margin: 50px 200px 50px 100px;
+
+            select {
+                margin: 0 20px 0 20px;
+                padding: 10px;
+                width: 20%;
+            }
+
+            input {
+                padding: 10px;
+                width: 67%;
+                margin: 0 20px 20px 0;
+
+            }
+
+            .email {
+                width: 90%;
+                margin: 0;
+
+            }
+
+            textarea {
+                width: 90%;
+                height: 30%;
+                padding: 10px;
+                margin-top: 20px;
+            }
+
+        }
+
+        .maprouter {
+            width: 20%;
+            margin: 20px 50px 20px;
+           
+            padding: 0;
+
+            iframe {
+                display: inline-block;
+                width: 100%;
+                text-align: left;
+                
+            }
+
+        }
 
         h1 {
             color: #364248;
@@ -148,40 +213,8 @@ body {
             padding-top: 30px;
 
         }
-        div{
-            background-color: #FF4E26;
-            padding: 10px;
-            text-align: center;
-            width: 40%;
-            padding: 20px 0;
-            
-            display: inline-block;
-            margin: 50px 300px 0 0;
-            select{
-                margin: 0 20px 0 20px;
-                padding: 10px;
-                width: 20%;
-            }
-            input{
-                padding: 10px;
-                width: 67%;
-                margin: 0 20px 20px 0;
-                
-            }
-            .email{
-                width: 90%;
-                margin: 0;
-                
-            }
-            
-            textarea{
-                width: 90%;
-                height: 30%;
-                padding: 10px;
-                margin-top: 20px;
-            }
-            
-        }
+
+
     }
 
     footer {
