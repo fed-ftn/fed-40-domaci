@@ -30,6 +30,32 @@
        @content;
 }
 
+@mixin pictures-background {
+.loft {
+    background-image: url(../slike/1.jpg);
+}
+
+.lovely {
+    background-image: url(../slike/2.jpg);
+}
+
+.condo {
+    background-image: url(../slike/3.jpg);
+}
+
+.studio {
+    background-image: url(../slike/4.jpg);
+}
+.artist {
+    background-image: url(../slike/5.jpg);
+}
+.downtown {
+    background-image: url(../slike/6.jpg);
+}
+
+}
+
+
 
 @mixin sections-container-height {
     main > .intro-container {
@@ -46,13 +72,13 @@
 
 
 @mixin tablet {
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    @media screen and (max-width:800px){
         @content;
     }
 }
 
 @mixin mobile {
-    @media only screen and (min-device-width : 320px) and (max-device-width : 767px){
+    @media screen and (max-width:500px){
         @content;
     }
 }
