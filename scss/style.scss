@@ -85,8 +85,8 @@ nav {
         align-items: center;
         background-color: white;
         border: 1px solid rgb(192, 190, 190);
-        border-radius: 50px;
-        color: gray;
+        border-radius: 25px;
+        color: $font-color;
 
         &:hover {
             background-color: rgb(206, 206, 206);
@@ -166,6 +166,10 @@ nav {
     flex-direction: column;
     align-items: center;
     margin: 50px;
+
+    button {
+        display: none;
+    }
 
     table {
         border-collapse: collapse;
@@ -348,7 +352,7 @@ footer {
     }
 
     button {
-        width: 25% !important;
+        width: 30% !important;
         display: flex !important;
         padding: 10px 0px !important;
         margin: 10px !important;
@@ -385,6 +389,12 @@ footer {
         padding: 0;
         width: 100%;
     }
+
+    .pricing-container {
+        button {
+            display: none !important;
+        }
+    }
 }
 
 
@@ -413,7 +423,14 @@ footer {
     }
 
 
+    .filters-container {
+        button {
+            display: flex !important;
+            padding: 10px 5px !important;
+            margin: 4px !important;
 
+        }
+    }
 
     .pictures-container {
         justify-content: center;
@@ -441,7 +458,7 @@ footer {
         margin: 0px !important;
 
         .location-container {
-            width: 100%;
+            width: 70%;
 
             iframe {
                 width: 100%;
@@ -462,7 +479,15 @@ footer {
 
                     .select-container {
                         display: flex;
-                        flex-direction: row;
+                        flex-direction: column;
+
+                        #gender {
+                            width: 98% !important;
+                        }
+
+                        #name {
+                            width: 98% !important;
+                        }
                     }
 
                     .input-container,
@@ -471,7 +496,9 @@ footer {
                     }
 
                     input,
-                    textarea {
+                    textarea,
+                    select {
+                        padding: 10px !important;
                         width: 100% !important;
                         margin: 4px !important;
                     }
@@ -512,5 +539,39 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin: 0.5em 1.5em;
     }
+
+
+    .pricing-container {
+        height: 20%;
+        margin: 20px;
+
+        p{
+            margin: 20px;
+        }
+
+        button {
+            display: block !important;
+            margin: 20px;
+            background-color: white;
+            border: 1px solid rgb(192, 190, 190);
+            border-radius: 50px;
+            color: gray;
+            width: 52% !important;
+            padding: 15px 0px !important;
+            text-align: center;
+
+            &:hover {
+                background-color: rgb(206, 206, 206);
+                color: white;
+            }
+        }
+
+        table {
+            display: none;
+        }
+    }
+
+
 }
